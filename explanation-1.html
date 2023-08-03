@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>256times Media</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="icon"
+    href="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4349/61f3745599503f0881c08ee1993cfa9a65be5e74.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>        
+          <a href="index.html">
+            <img
+            src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4347/d587ecb07b71d2ea1df5d0ff6def950beff5decd.png"
+            width="160" alt="256times Media" class="logo-sp">
+          <img
+            src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4348/9e114103b741b2f6b98990fe393fe8a3cf48639a.png"
+            width="300" alt="256times Media" class="logo-pc">
+        </a>
+        
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="column">
+    <main class="explanations container">
+      <section class="explanation">
+        <span class="publication-date"></span>
+        <span>JavaScript: setInteval()とsetTimeOut()の違い</span>
+        <div class="pic">
+          <img
+            src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4334/602cab9a823ee99edd06b43d3489f6c48248fc84.jpg">
+        </div>
+        <div class="desc">
+          <h4>setInterval()とは？</h4>
+          <p>
+            setInterval() は一定周期ごとに何らかの処理を繰り返し実行するもので、一定時間ごとに時刻を表示して時計を作ったり、一定時間ごとに画像が切り替わるスライドショーを作るときなどに使われます。
+          </p>
+          <h4>setTimeOut()とは？</h4>
+          <p>
+            setTimeOut() は一定時間後に一度だけ処理を実行してくれるもので、ページを読み込んでから 3 秒後にクーポンのお知らせを出したり、もしくは 3 秒後に他のサイトにリダイレクトしたり、といった場合に使われます。
+          </p>
+          <p>
+            <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4360/00a990378b462504d43471b8a0ffeeb42d79328e.png" width="400" height="230">
+          </p>
+             <p>
+              命令の構文は、どちらも関数と時間を指定します。
+            <br>
+              すると setInterval() はこの関数をこの時間ごとに繰り返し実行してくれ、setTimeOut() はこの関数をこの時間後に一度だけ実行してくれます。
+            <br>
+            これらをもっと詳しく勉強したい場合には、ドットインストール社が運営する、「書いて、読んで、ともに学ぶ」参加型プログラミング勉強会、256timesがオススメです。
+            <br>
+          </p>
+          <p>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/5OXQVQ097nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+          </p>
+        </div>
+          <div class="footer">
+            <img
+              src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4342/5158241b605426fc9aed479e97a76eba2d2b09a7.png"
+              alt="" width="40" height="40">
+            <p>Christian Buehner</p>
+          </div>
+        </div>
+      </section>
+  </main>
+  </div>
+
+  <footer>
+    <small>(c) 256times.com</small>
+    <address>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-line"></i>
+    </address>
+  </footer>
+
+  <script>
+    // Get publication date elements
+    const publicationDateElements = document.querySelectorAll('.publication-date');
+
+    // Calculate days ago and display publication date
+    const publicationDate = new Date('2023-07-25'); // Replace with the actual publication date
+    const currentDate = new Date();
+    const daysAgo = Math.floor((currentDate - publicationDate) / (1000 * 60 * 60 * 24));
+
+    publicationDateElements.forEach(element => {
+      element.textContent = `${daysAgo}日前`;
+    });
+  </script>
+</body>
+
+</html>
