@@ -212,8 +212,10 @@ main .footer {
   background: white;
 }
 main .desc .footer img {
+  margin: 16px;
   border-radius: 50%;
 }
+
 
 main p {
   padding: 16px;
