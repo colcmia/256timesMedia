@@ -177,7 +177,7 @@ header .container {
 
 main .explanation .pic img{
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
 }
 
@@ -203,6 +203,11 @@ main section .publication-date {
   left: 20px;
 }
 
+main .desc img {
+  width: 100%;
+  height: auto;
+  margin: 4px 0 8px 0;
+}
 main .footer {
   display: flex;
   gap: 8px;
@@ -211,7 +216,7 @@ main .footer {
   color: inherit;
   background: white;
 }
-main .desc .footer img {
+main .footer img {
   margin: 16px;
   border-radius: 50%;
 }
@@ -229,6 +234,12 @@ main h4 {
   padding: 16px;
 }
 
+iframe {
+  aspect-ratio:16 / 9;
+  width:100%;
+  height:100%
+}
+
    /*  aside */
 aside {
     padding: 16px;
@@ -238,6 +249,7 @@ aside {
 aside h3 {
   padding: 16px;
   text-align: center;
+  background: #f2f2f3;
 }
 
 aside h4 {
